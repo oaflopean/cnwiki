@@ -11,7 +11,7 @@ package org.caesarnapleswiki.caesarnapleswiki;
         import java.io.IOException;
         import java.util.HashMap;
 
-public class WordCounter implements TextAnalyzer {
+public class WordCounter {
     private HashMap<String, Integer> wordCounts;
     private HashMap<String, ArrayList<String>> wordsThatFollow;
 

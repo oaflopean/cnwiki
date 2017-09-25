@@ -10,16 +10,10 @@ package org.caesarnapleswiki.caesarnapleswiki;
 
 public class SentenceGenerator {
     Random random;
+    String filename=new String("caesarnapleswiki\\corpus.txt");
+    WordCounter counter = new WordCounter(filename);
 
-    public SentenceGenerator(String filename) {
-        counter = new WordCounter(filename);
-        this.random = new Random();
-    }
 
-    public SentenceGenerator(String filename, Random random) {
-        counter = new WordCounter(filename);
-        this.random = random;
-    }
 
     // given any word, randomly choose a word that could come next, using the TextAnalyzer wordsThatCouldComeNext
     // return that sentence as a String
@@ -54,16 +48,5 @@ public class SentenceGenerator {
         return possibleWords.get(randomIndex);
     }
 
-    public static void sentencetests () {
-        SentenceGeneratorStarterCode sg = new SentenceGeneratorStarterCode("alice_tokenized.txt");
 
-        System.out.println(sg.generateRandomSentence("Alice"));
-        System.out.println(sg.generateRandomSentence("She"));
-        System.out.println(sg.generateRandomSentence());
-        System.out.println(sg.generateRandomSentence());
-        System.out.println(sg.generateRandomSentence());
-        System.out.println(sg.generateRandomSentence("There"));
-        System.out.println(sg.generateRandomSentence("This"));
-        System.out.println("The End");
-    }
 }
