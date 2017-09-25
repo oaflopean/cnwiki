@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/floatingActionButton2"
+        app:backgroundTint="?attr/colorPrimaryDark"
+        app:useCompatPadding="true"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:foregroundGravity="bottom"
+        android:layout_alignParentBottom="false"
+        android:isScrollContainer="false"
+        android:fillViewport="false"
+        android:layout_above="@+id/floatingActionButton2"
+        android:layout_below="@+id/custom_header"
+>
+
+        <TextView
+            android:text="@string/go"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:id="@+id/longform"
+            android:textColor="@android:color/black"
+            android:textAlignment="center"
+            android:textIsSelectable="true" />
+    </ScrollView>
+
+    <EditText
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:inputType="number"
+        android:ems="10"
+        android:layout_alignParentBottom="true"
+        android:layout_toRightOf="@+id/floatingActionButton2"
+        android:layout_toEndOf="@+id/floatingActionButton2"
+        android:id="@+id/editText"
+        android:text="@string/number"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="@string/length"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/editText"
+        android:layout_toRightOf="@+id/floatingActionButton2"
+        android:layout_toEndOf="@+id/floatingActionButton2"
+        android:id="@+id/textView4"
+        android:textColor="@android:color/black" />
+
+    <TextView
+        android:text="@string/custom"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/custom_header"
+        android:textColor="@android:color/black"
+        android:textSize="32sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true" />
+
+</RelativeLayout>

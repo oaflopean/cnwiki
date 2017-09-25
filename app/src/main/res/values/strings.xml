@@ -7,5 +7,16 @@
     <string name="go">Go</string>
     <string name="source">View corpus</string>
     <string name="change">Change source</string>
-    <string name="memory">Memory</string>
+    <string name="memory">History</string>
+
+    <string name="number">100</string>
+    <string name="length">Number of words</string>
+    <string-array name="history">
+        <item>Reveal yourself, you awful thing!</item>
+        <item>Sub-Chapter : The final quarter of sophomore year</item>
+        <item>I am not against poking. </item>
+        <item>"So, about these pandas: should I be worried?"</item>
+        <item>5. Hang yourself in your closet.</item>
+    </string-array>
+    <string name="delete">Delete history</string>
 </resources>
