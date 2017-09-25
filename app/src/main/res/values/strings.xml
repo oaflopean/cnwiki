@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">Caesar Naples Wiki</string>
+    <string name="welcome">Welcome to Caesar Naples Wiki!</string>
+    <string name="sentences">Generate sentences</string>
+    <string name="paragraphs">Generate paragraphs</string>
+    <string name="custom">Custom length</string>
+    <string name="go">Go</string>
+</resources>
