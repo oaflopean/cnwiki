@@ -11,76 +11,160 @@
     android:paddingTop="@dimen/activity_vertical_margin"
     tools:context="org.caesarnapleswiki.caesarnapleswiki.MainActivity">
 
-    <TextView
-        android:text="TextView"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/welcome"
-        tools:text="@string/welcome"
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
         android:layout_alignParentStart="true"
-        android:textSize="28sp"
-        android:textStyle="normal|bold"
-        android:textAlignment="center" />
+        android:background="@android:color/holo_orange_light">
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:id="@+id/button1"
-        android:layout_alignBottom="@+id/soption"
-        android:layout_toRightOf="@+id/soption"
-        android:layout_toEndOf="@+id/soption"
-        android:contentDescription="@string/go" />
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical" >
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:layout_alignBottom="@+id/poption"
-        android:layout_toRightOf="@+id/poption"
-        android:layout_toEndOf="@+id/poption"
-        android:id="@+id/button2"
-        android:contentDescription="@string/go" />
+            <TextView
+                android:text="@string/welcome"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/welcome"
 
-    <TextView
-        android:text="@string/sentences"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/soption"
-        android:layout_below="@+id/welcome"
-        android:layout_centerHorizontal="true"
-        android:layout_marginTop="30dp" />
+                android:textSize="28sp"
+                android:textStyle="normal|bold"
+                android:textAlignment="center"
+                android:background="@android:color/holo_orange_dark" />
 
-    <TextView
-        android:text="@string/paragraphs"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:layout_marginTop="30dp"
-        android:id="@+id/poption"
-        android:layout_below="@+id/soption"
-        android:layout_toLeftOf="@+id/button1"
-        android:layout_toStartOf="@+id/button1" />
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
 
-    <TextView
-        android:text="@string/custom"
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:id="@+id/coption"
-        android:layout_marginTop="30dp"
-        android:layout_below="@+id/button2"
-        android:layout_toLeftOf="@+id/button2"
-        android:layout_toStartOf="@+id/button2" />
+                <ImageButton
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/arrow_up_float"
+                    android:id="@+id/imageButton10"
+                    android:contentDescription="@string/go" />
 
-    <ImageButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        app:srcCompat="@android:drawable/arrow_up_float"
-        android:id="@+id/button3"
-        android:layout_alignBottom="@+id/coption"
-        android:layout_toRightOf="@+id/coption"
-        android:layout_toEndOf="@+id/coption"
-        android:contentDescription="@string/go" />
+                <TextView
+                    android:text="@string/sentences"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/stext"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageButton10"
+                    android:layout_toEndOf="@+id/imageButton10"
+                    android:textSize="28sp" />
+
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/arrow_up_float"
+                    android:id="@+id/imageButton7"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/go" />
+
+                <TextView
+                    android:text="@string/paragraphs"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ptext"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageButton7"
+                    android:layout_toEndOf="@+id/imageButton7"
+                    android:textSize="28sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_weight="1">
+
+                <ImageButton
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/arrow_up_float"
+                    android:id="@+id/imageButton8"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/go" />
+
+                <TextView
+                    android:text="@string/custom"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/ctext"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageButton8"
+                    android:layout_toEndOf="@+id/imageButton8"
+                    android:textSize="28sp" />
+
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <TextView
+                    android:text="@string/change"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/chtext"
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageButton12"
+                    android:layout_toEndOf="@+id/imageButton12"
+                    android:textSize="28sp" />
+
+                <ImageButton
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/arrow_up_float"
+                    android:id="@+id/imageButton12"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/go" />
+            </RelativeLayout>
+
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent">
+
+                <ImageButton
+                    android:layout_width="19dp"
+                    android:layout_height="wrap_content"
+                    app:srcCompat="@android:drawable/arrow_up_float"
+                    android:id="@+id/imageButton13"
+                    android:layout_alignParentTop="true"
+                    android:layout_alignParentLeft="true"
+                    android:layout_alignParentStart="true"
+                    android:contentDescription="@string/go" />
+
+                <TextView
+                    android:text="@string/memory"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:id="@+id/memory"
+
+                    android:layout_centerVertical="true"
+                    android:layout_toRightOf="@+id/imageButton13"
+                    android:layout_toEndOf="@+id/imageButton13"
+                    android:textSize="28sp" />
+            </RelativeLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
 
 </RelativeLayout>

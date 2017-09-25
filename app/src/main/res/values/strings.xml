@@ -1,8 +1,11 @@
 <resources>
     <string name="app_name">Caesar Naples Wiki</string>
-    <string name="welcome">Welcome to Caesar Naples Wiki!</string>
+    <string name="welcome">Markov chain generator by Caesar Naples</string>
     <string name="sentences">Generate sentences</string>
     <string name="paragraphs">Generate paragraphs</string>
-    <string name="custom">Custom length</string>
+    <string name="custom">Generate custom length</string>
     <string name="go">Go</string>
+    <string name="source">View corpus</string>
+    <string name="change">Change source</string>
+    <string name="memory">Memory</string>
 </resources>
