@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:id="@+id/floatingActionButton5"
+        android:baselineAlignBottom="false"
+        app:backgroundTint="?attr/colorPrimaryDark"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        app:useCompatPadding="true" />
+
+    <TextView
+        android:text="@string/sentences"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView2"
+        android:textColor="@android:color/background_dark"
+        android:textSize="32sp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="14sp" />
+
+    <TextView
+        android:text="@string/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="true" />
+
+</RelativeLayout>

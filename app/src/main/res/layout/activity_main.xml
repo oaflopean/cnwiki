@@ -14,10 +14,14 @@
     <ScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
+        android:background="@android:color/holo_orange_light"
+        style="@android:style/Widget.ScrollView"
+        android:clipToPadding="false"
+        android:fillViewport="false"
+        android:elevation="24dp"
         android:layout_alignParentTop="true"
         android:layout_alignParentLeft="true"
-        android:layout_alignParentStart="true"
-        android:background="@android:color/holo_orange_light">
+        android:layout_alignParentStart="true">
 
         <LinearLayout
             android:layout_width="match_parent"
@@ -30,17 +34,19 @@
                 android:layout_height="wrap_content"
                 android:id="@+id/welcome"
 
-                android:textSize="28sp"
+                android:textSize="36sp"
                 android:textStyle="normal|bold"
                 android:textAlignment="center"
-                android:background="@android:color/holo_orange_dark" />
+                android:background="@android:color/holo_orange_dark"
+                android:textColor="@android:color/white"
+                android:elevation="24dp" />
 
             <RelativeLayout
                 android:layout_width="match_parent"
                 android:layout_height="match_parent">
 
                 <ImageButton
-                    android:layout_width="19dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/arrow_up_float"
                     android:id="@+id/imageButton10"
@@ -54,7 +60,8 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/imageButton10"
                     android:layout_toEndOf="@+id/imageButton10"
-                    android:textSize="28sp" />
+                    android:textSize="22sp"
+                    android:elevation="12dp" />
 
 
             </RelativeLayout>
@@ -64,7 +71,7 @@
                 android:layout_height="match_parent">
 
                 <ImageButton
-                    android:layout_width="19dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/arrow_up_float"
                     android:id="@+id/imageButton7"
@@ -81,7 +88,8 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/imageButton7"
                     android:layout_toEndOf="@+id/imageButton7"
-                    android:textSize="28sp" />
+                    android:textSize="22sp"
+                    android:elevation="12dp" />
 
             </RelativeLayout>
 
@@ -91,7 +99,7 @@
                 android:layout_weight="1">
 
                 <ImageButton
-                    android:layout_width="19dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/arrow_up_float"
                     android:id="@+id/imageButton8"
@@ -108,7 +116,8 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/imageButton8"
                     android:layout_toEndOf="@+id/imageButton8"
-                    android:textSize="28sp" />
+                    android:textSize="22sp"
+                    android:elevation="12dp" />
 
             </RelativeLayout>
 
@@ -124,10 +133,11 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/imageButton12"
                     android:layout_toEndOf="@+id/imageButton12"
-                    android:textSize="28sp" />
+                    android:textSize="22sp"
+                    android:elevation="12dp" />
 
                 <ImageButton
-                    android:layout_width="19dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/arrow_up_float"
                     android:id="@+id/imageButton12"
@@ -142,7 +152,7 @@
                 android:layout_height="match_parent">
 
                 <ImageButton
-                    android:layout_width="19dp"
+                    android:layout_width="60dp"
                     android:layout_height="wrap_content"
                     app:srcCompat="@android:drawable/arrow_up_float"
                     android:id="@+id/imageButton13"
@@ -160,7 +170,7 @@
                     android:layout_centerVertical="true"
                     android:layout_toRightOf="@+id/imageButton13"
                     android:layout_toEndOf="@+id/imageButton13"
-                    android:textSize="28sp" />
+                    android:textSize="22sp"/>
             </RelativeLayout>
 
         </LinearLayout>

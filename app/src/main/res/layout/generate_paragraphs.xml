@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_width="match_parent" android:layout_height="match_parent"
+    android:background="@android:color/holo_orange_light">
+
+    <TextView
+        android:text="@string/go"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/textView"
+        android:textColor="@android:color/black"
+        android:layout_centerVertical="true"
+        android:layout_centerHorizontal="true"
+        android:textIsSelectable="true" />
+
+    <TextView
+        android:text="@string/paragraphs"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+
+        android:id="@+id/para" android:textSize="32dp"
+        android:layout_alignParentTop="true"
+        android:layout_centerHorizontal="true"
+        android:paddingTop="14sp"
+        android:textColor="@android:color/background_dark" />
+
+    <android.support.design.widget.FloatingActionButton
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:clickable="true"
+        app:fabSize="mini"
+        app:backgroundTint="?attr/colorPrimaryDark"
+
+        app:srcCompat="@android:drawable/ic_input_add"
+        android:layout_alignParentBottom="true"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/floatingActionButton"
+        app:useCompatPadding="true" />
+</RelativeLayout>
