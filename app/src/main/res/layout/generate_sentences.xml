@@ -5,19 +5,6 @@
     android:layout_width="match_parent" android:layout_height="match_parent"
     android:background="@android:color/holo_orange_light">
 
-    <android.support.design.widget.FloatingActionButton
-        android:layout_width="wrap_content"
-        android:layout_height="wrap_content"
-        android:clickable="true"
-        app:fabSize="mini"
-        app:srcCompat="@android:drawable/ic_input_add"
-        android:id="@+id/floatingActionButton5"
-        android:baselineAlignBottom="false"
-        app:backgroundTint="?attr/colorPrimaryDark"
-        android:layout_alignParentBottom="true"
-        android:layout_centerHorizontal="true"
-        app:useCompatPadding="true" />
-
     <TextView
         android:text="@string/sentences"
         android:layout_width="wrap_content"
@@ -38,5 +25,15 @@
         android:layout_centerVertical="true"
         android:layout_centerHorizontal="true"
         android:textIsSelectable="true" />
+
+    <Button
+        android:text="Button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:id="@+id/button"
+        android:layout_below="@+id/textView"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="239dp"
+        android:onClick="sentenceG" />
 
 </RelativeLayout>
