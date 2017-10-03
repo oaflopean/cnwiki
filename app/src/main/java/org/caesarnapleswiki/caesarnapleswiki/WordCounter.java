@@ -5,25 +5,26 @@ package org.caesarnapleswiki.caesarnapleswiki;
  */
 
 
+        import java.io.InputStream;
         import java.util.ArrayList;
         import java.util.Scanner;
         import java.io.FileReader;
         import java.io.IOException;
         import java.util.HashMap;
 
+        import static org.caesarnapleswiki.caesarnapleswiki.R.raw.corpus;
+
 public class WordCounter {
     private HashMap<String, Integer> wordCounts;
     private HashMap<String, ArrayList<String>> wordsThatFollow;
 
 
-    public WordCounter(String filename) {
+
+    public WordCounter(InputStream corpus) {
         wordCounts = new HashMap<String, Integer>();
-        try {
-            Scanner fileScanner = new Scanner(new FileReader(filename));
+            Scanner fileScanner = new Scanner(corpus);
             countWords(fileScanner);
-        } catch (IOException e) {
-            throw new RuntimeException("Could not load filename " + filename);
-        }
+
     }
 
     private void countWords(Scanner scanner) {
@@ -41,7 +42,7 @@ public class WordCounter {
     }
 
     private void addWordThatFollows(String prevWord, String nextWord) {
-        ArrayList<String> existingWords = getWordsThatCouldComeNext(prevWord);
+        ArrayList existingWords = getWordsThatCouldComeNext(prevWord);
         existingWords.add(nextWord);
         wordsThatFollow.put(prevWord, existingWords);
     }
@@ -97,12 +98,5 @@ public class WordCounter {
         return 0;
     }
 
-    public static void countertests() {
-        WordCounter wc = new WordCounter("tale_of_two_cities_tokenized.txt");
-        String[] testWords = {"It", "it", ",", "best", "times", "of", "was"};
-        for (String word : testWords) {
-            System.out.println(word + " occurred " + wc.getWordCounts(word) + " times");
-        }
-        System.out.println("Most common word: " + wc.getMostCommonWord());
-    }
+
 }

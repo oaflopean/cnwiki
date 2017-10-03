@@ -10,15 +10,7 @@ public class SentenceGeneratorStarterCode {
     WordCounter counter;
     Random random;
 
-    public SentenceGeneratorStarterCode(String filename) {
-        counter = new WordCounter(filename);
-        this.random = new Random();
-    }
 
-    public SentenceGeneratorStarterCode(String filename, Random random) {
-        counter = new WordCounter(filename);
-        this.random = random;
-    }
 
     // given any word, randomly choose a word that could come next, using the TextAnalyzer wordsThatCouldComeNext
     // return that sentence as a String

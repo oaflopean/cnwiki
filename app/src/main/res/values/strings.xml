@@ -1,6 +1,6 @@
 <resources>
     <string name="app_name">Caesar Naples Wiki</string>
-    <string name="welcome">Markov chain generator by Caesar Naples</string>
+    <string name="welcome">Caesar Naples Wiki</string>
     <string name="sentences">Generate sentences</string>
     <string name="paragraphs">Generate paragraphs</string>
     <string name="custom">Generate custom length</string>
@@ -19,4 +19,5 @@
         <item>5. Hang yourself in your closet.</item>
     </string-array>
     <string name="delete">Delete history</string>
+
 </resources>
