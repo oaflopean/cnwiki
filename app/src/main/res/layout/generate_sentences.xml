@@ -10,30 +10,39 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/textView2"
-        android:textColor="@android:color/background_dark"
+        android:textColor="@color/colorPrimaryDark"
         android:textSize="32sp"
         android:layout_alignParentTop="true"
         android:layout_centerHorizontal="true"
-        android:paddingTop="14sp" />
+        android:paddingTop="14sp"
+        android:textStyle="normal|bold" />
 
     <TextView
         android:text="@string/go"
-        android:layout_width="wrap_content"
+        android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:id="@+id/textView"
         android:textColor="@android:color/black"
         android:layout_centerVertical="true"
-        android:layout_centerHorizontal="true"
-        android:textIsSelectable="true" />
+        android:textIsSelectable="true"
+        android:layout_alignLeft="@+id/textView2"
+        android:layout_alignStart="@+id/textView2"
+        android:layout_alignRight="@+id/textView2"
+        android:layout_alignEnd="@+id/textView2"
+        android:textSize="32sp"
+        android:paddingTop="15dp"
+        android:paddingBottom="15dp"
+        android:cursorVisible="true"
+        android:gravity="bottom" />
 
     <Button
         android:text="Button"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:id="@+id/button"
-        android:layout_below="@+id/textView"
+        android:onClick="sentenceG"
+        android:layout_alignParentBottom="true"
         android:layout_centerHorizontal="true"
-        android:layout_marginTop="239dp"
-        android:onClick="sentenceG" />
+        android:layout_marginBottom="27dp" />
 
 </RelativeLayout>

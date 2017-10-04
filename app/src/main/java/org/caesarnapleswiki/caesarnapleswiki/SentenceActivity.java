@@ -21,8 +21,11 @@ public class SentenceActivity extends AppCompatActivity {
     @Override
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
-        setContentView(R.layout.generate_sentences);
+        TextView t=new TextView(this);
 
+        setContentView(R.layout.generate_sentences);
+        t=(TextView)findViewById(R.id.textView);
+        t.setText("Go");
 }
     @RequiresApi(api = Build.VERSION_CODES.KITKAT)
     public void sentenceG(View view){
@@ -38,9 +41,11 @@ public class SentenceActivity extends AppCompatActivity {
 
         String markov=null;
         try {
-            TextView showText = new TextView(this);
+            TextView t;
+
+            t=(TextView)findViewById(R.id.textView);
             markov = rndMarkov(input, wiki, extra, added);
-            showText.setText(markov);
+            t.setText(markov);
 
     } catch (IOException e) {
             e.printStackTrace();
